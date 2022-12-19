@@ -10,8 +10,8 @@ This repository contains instructions and relevant informmation about the Creali
 2. Wind the Z axis almost all the way to the top. Stop before the belt that connects both Z screws has slack in it.
 3. Turn the printer on its side.
 4. Use the included 2.0mm hex wrench to remove the 1 bajillion screws holding the bottom plate on the printer.
-  a. The two screws at the back and the one at the front-center are short while the rest are long.
-  b. There is a fan attached to the bottom plate which is plugged in to the mainboard. You may need to remove some hot-snot to unplug the fan and free the plate.
+   - The two screws at the back and the one at the front-center are short while the rest are long.
+   - There is a fan attached to the bottom plate which is plugged in to the mainboard. You may need to remove some hot-snot to unplug the fan and free the plate.
 5. Remove the MicroSD card from the Wifi board.
 6. Go to https://github.com/ihrapsa/KlipperWrt/tree/main/Firmware/OpenWrt_snapshot and download the latest `*-factory.bin` file.
 7. Put the MicroSD card from step 5 into your PC.
@@ -22,18 +22,18 @@ This repository contains instructions and relevant informmation about the Creali
 12. Set the printer upright and connect it via Ethernet to your PC.
 13. Plug in and power on the printer.
 14. Wait for the wifi network OpenWRT to appear and connect to it.
-  a. Optionally, if you want to connect it to your existing network, you can connect the Ethernet port to your router or switch.
+    - Optionally, if you want to connect it to your existing network, you can connect the Ethernet port to your router or switch.
 15. Once connected, open a browser and navigate to http://192.168.1.1:81/cgi-bin/luci/.
-  a. *Note*: If you connected via Ethernet to your existing network, you'll have to check your DHCP server for a new client to find the IP address and use it in the URL above.
-  b. Log in with the username `root` and no password.
-  c. Make sure to set a new password under System > Administration once logged in.
+    - *Note*: If you connected via Ethernet to your existing network, you'll have to check your DHCP server for a new client to find the IP address and use it in the URL above.
+    - Log in with the username `root` and no password.
+    - Make sure to set a new password under System > Administration once logged in.
 16. Set a static IP address for the printer under Network > Interfaces.
-  a. On the version of OpenWRT that I downloaded, this involved editing the `br-lan` interface and setting a static IP in the subnet of my home network (outside the DHCP address range).
-  b. If you want the printer to connect to your Wifi, you'll need to add a wireless connection under Network > Wireless. Once you've configured the network, click Save & Apply.
-  c. Once you are able to connect to the printer through your home network, remove the "OpenWRT" network under Network > Wireless.
-  d. Don't forget to set a gateway (your network's) and DNS servers for the interface.
+    - On the version of OpenWRT that I downloaded, this involved editing the `br-lan` interface and setting a static IP in the subnet of my home network (outside the DHCP address range).
+    - If you want the printer to connect to your Wifi, you'll need to add a wireless connection under Network > Wireless. Once you've configured the network, click Save & Apply.
+    - Once you are able to connect to the printer through your home network, remove the "OpenWRT" network under Network > Wireless.
+    - Don't forget to set a gateway (your network's) and DNS servers for the interface.
 17. From here, follow the instructions at https://damsteen.nl/blog/2022/02/10/how-to-install-octowrt-on-creality-wifi-box#connecting-to-a-command-prompt. When you get to the section "Installing Octoprint", come back here.
-  a. **NOTE**: Install version 1.8.2 *or earlier*. 1.8.6 contains dependencies on packages that are not available on OpenWRT.
+    - **NOTE**: Install version 1.8.2 *or earlier*. 1.8.6 contains dependencies on packages that are not available on OpenWRT.
 18. Several instructions in the "Installing Octoprint" section of the link from 17 were broken or no longer worked. Follow the below instructions instead.
 19. Update the system and install some dependencies.
 ```
@@ -48,7 +48,7 @@ wget -O /tmp/python3.9-regex-2022.1.18%2Bnetifaces-0.11.0_mipsel_24kc.ipk https:
 opkg install /tmp/python3.9-regex-2022.1.18%2Bnetifaces-0.11.0_mipsel_24kc.ipk
 ```
 21. Install more Python dependencies (these will take a while).
-  a. **NOTE**: `opkg` installs a "system pip" and you should, therefore, ignore the message regarding upgrading `pip`. Doing so can cause your system to become unrecoverable.
+    - **NOTE**: `opkg` installs a "system pip" and you should, therefore, ignore the message regarding upgrading `pip`. Doing so can cause your system to become unrecoverable.
 ```
 pip install --upgrade setuptools
 pip install wheel
@@ -56,7 +56,7 @@ pip install frozendict
 pip install immutabledict
 ```
 22. Install Octoprint. This will take a *VERY* long time. Be patient.
-  a. If you want, you can connect another SSH session and use `htop` to make sure the system is still doing something.
+    - If you want, you can connect another SSH session and use `htop` to make sure the system is still doing something.
 ```
 pip install octoprint==1.8.2
 ```
@@ -85,4 +85,4 @@ service octoprint enable
 ```
 23. Reboot with the command `reboot`.
 24. Connect to OctoPrint in a browser at http://<ip_address>:5000/.
-  a. First startup will take 5-10 minutes before the OctoPrint UI is available.
+    - First startup will take 5-10 minutes before the OctoPrint UI is available.
