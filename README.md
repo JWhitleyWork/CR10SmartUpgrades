@@ -87,3 +87,4 @@ service octoprint enable
 23. Reboot with the command `reboot`.
 24. Connect to OctoPrint in a browser at http://<ip_address>:5000/.
     - First startup will take 5-10 minutes before the OctoPrint UI is available (after boot).
+25. Continue Sebastiaan's instructions at https://damsteen.nl/blog/2022/02/10/how-to-install-octowrt-on-creality-wifi-box#configuring-octoprint.
