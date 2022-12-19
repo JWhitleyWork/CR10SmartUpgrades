@@ -56,6 +56,7 @@ pip install frozendict
 pip install immutabledict
 ```
 22. Install Octoprint. This will take a *VERY* long time. Be patient.
+    - **NOTE**: DO NOT install any version of OctoPrint above 1.8.2. Version 1.8.3 added a dependency on `passlib` which is not available on OpenWRT.
     - If you want, you can connect another SSH session and use `htop` to make sure the system is still doing something.
 ```
 pip install octoprint==1.8.2
@@ -85,4 +86,4 @@ service octoprint enable
 ```
 23. Reboot with the command `reboot`.
 24. Connect to OctoPrint in a browser at http://<ip_address>:5000/.
-    - First startup will take 5-10 minutes before the OctoPrint UI is available.
+    - First startup will take 5-10 minutes before the OctoPrint UI is available (after boot).
