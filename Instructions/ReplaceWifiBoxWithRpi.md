@@ -4,8 +4,9 @@ Instructions for removing and replacing the built-in Wifi Box in the CR-10 Smart
 
 ## Required Components
 - Raspberry Pi
-- Raspberry Pi Case (I used [this one](https://www.raspberrypiplastics.com/product-page/raspberry-pi-case-clear))
+- Raspberry Pi Case (I used [this one](https://amzn.to/3jhbPnE))
 - Short USB Micro B to USB A cable
+- (optional) [Short Panel-mount USB A Female to USB A Male cable](https://amzn.to/3FA9JH8)
 
 ## Instructions
 1. Power off and unplug the printer.
@@ -40,12 +41,12 @@ Instructions for removing and replacing the built-in Wifi Box in the CR-10 Smart
     - Connect the Micro B to A cable to the Micro USB connector on the Distribution Board and one of the USB ports on the Raspberry Pi.
     - Make sure the Camera and Display connectors on the Raspberry Pi are not covered in case you plan to use them.
     - Strain-releive and manage cables to the best of your ability.
+    - (optional) Remove the existing panel-mount USB cable on the side of the printer and replace with the male-to-female extension cable. Plug this into one of the Raspberry Pi USB ports.
 13. Before putting the bottom cover back on, verify that powering on the printer also powers on the Raspberry Pi.
     - At this point, see the Optional Steps below if you want to add a camera or touch screen.
 14. Re-attach the bottom plate on the printer and turn it right-side-up.
 15. Connect an Ethernet cable between the port on the side of the printer and your local network switch or router.
 
 ## Optional Steps
-- Install replacement USB cable
-- Install Raspberry Pi Camera
-- Install TFT43 Screen
+- [Install Raspberry Pi Camera](https://github.com/JWhitleyWork/CR10SmartUpgrades/blob/main/Instructions/InstallRaspberryPiCamera.md)
+- [Replace the Stock Touch Screen](https://github.com/JWhitleyWork/CR10SmartUpgrades/blob/main/Instructions/ReplacingTheStockScreen.md)
