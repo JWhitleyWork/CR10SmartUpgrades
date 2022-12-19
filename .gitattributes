@@ -1,0 +1,8 @@
+Screen/Pictures/20221218_163237.jpg filter=lfs diff=lfs merge=lfs -text
+Screen/Pictures/20221218_163258.jpg filter=lfs diff=lfs merge=lfs -text
+Screen/Pictures/20221218_163503.jpg filter=lfs diff=lfs merge=lfs -text
+Screen/Pictures/20221218_163517.jpg filter=lfs diff=lfs merge=lfs -text
+Screen/Pictures/20221218_163609.jpg filter=lfs diff=lfs merge=lfs -text
+Screen/Resources/1611933767118-development-guide-of-t5l-asic_20200624.pdf filter=lfs diff=lfs merge=lfs -text
+Screen/Resources/DWIN[[:space:]]C[[:space:]]Compiler[[:space:]]1.1.0.7.zip filter=lfs diff=lfs merge=lfs -text
+Screen/Resources/T5L_DGUSII-Application-Development-Guide20200902-1.pdf filter=lfs diff=lfs merge=lfs -text
