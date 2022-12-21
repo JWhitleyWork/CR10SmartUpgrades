@@ -56,6 +56,7 @@ Instructions for removing and replacing the built-in Wifi Box in the CR-10 Smart
     - [Themeify](https://plugins.octoprint.org/plugins/themeify/)
     - [OctoPrint-Widescreen](https://plugins.octoprint.org/plugins/widescreen/)
     - [Preheat Button](https://plugins.octoprint.org/plugins/preheat/)
+    - [Auto Bed Leveling Expert](https://plugins.octoprint.org/plugins/ABL_Expert/)
 
 ## Optional Steps
 - [Install Raspberry Pi Camera](https://github.com/JWhitleyWork/CR10SmartUpgrades/blob/main/Instructions/InstallRaspberryPiCamera.md)
