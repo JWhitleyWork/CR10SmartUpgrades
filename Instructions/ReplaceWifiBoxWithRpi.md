@@ -4,8 +4,10 @@ Instructions for removing and replacing the built-in Wifi Box in the CR-10 Smart
 
 ## Required Components
 - Raspberry Pi
+- [MicroSD Card](https://amzn.to/3HO1Wbj) at least 8GB in size
+- 2nd [MicroSD Card](https://amzn.to/3HO1Wbj) at least 8GB in size with SD Card Adapter
 - Raspberry Pi Case (I used [this one](https://amzn.to/3jhbPnE))
-- Short USB Micro B to USB A cable
+- [Full-sized SD card](https://amzn.to/3Ws7qg7) at least 8GB in size
 - (optional) [Short Panel-mount USB A Female to USB A Male cable](https://amzn.to/3FA9JH8)
 
 ## Instructions
@@ -25,8 +27,7 @@ Instructions for removing and replacing the built-in Wifi Box in the CR-10 Smart
    - My Wifi Box board had the model identification sticker on it. If yours does too, I recommend moving this to another location in the chassis.
 7. Install your Raspberry Pi in some sort of case for mounting.
    - I modified my case by only using the bottom part and super-gluing some small but strong neodymium magnets to the bottom.
-8. Using an 8GB or larger microSD card and the [Raspberry Pi Imager](https://www.raspberrypi.com/software/), flash the Mainsail OS image (under Other specific-purpose OS > 3D printing > Mainsail OS).
-   - Since I am using a Raspberry Pi 3B+ which has a 64-bit processor, I chose the rpi64 variant.
+8. Using an 8GB or larger microSD card and the [Raspberry Pi Imager](https://www.raspberrypi.com/software/), flash the OctoPi OS image (under Other specific-purpose OS > 3D printing > OctoPi).
 9. Install the microSD card in your Raspberry Pi.
 10. Mount the Pi in the CR-10 chassis where the Wifi Box board used to be.
     - I did this with neodymium magnets.
@@ -46,6 +47,9 @@ Instructions for removing and replacing the built-in Wifi Box in the CR-10 Smart
     - At this point, see the Optional Steps below if you want to add a camera or touch screen.
 14. Re-attach the bottom plate on the printer and turn it right-side-up.
 15. Connect an Ethernet cable between the port on the side of the printer and your local network switch or router.
+16. Connect the power cable, turn on the switch, and hold the power button for 2+ seconds.
+17. Your local network likely uses DHCP and OctoPi defaults to getting a DHCP address. You will need to check your router or DHCP server to find the new IP address on the network.
+18. Connect to the web interface for OctoPrint at http://<rpi_ip>/.
 
 ## Optional Steps
 - [Install Raspberry Pi Camera](https://github.com/JWhitleyWork/CR10SmartUpgrades/blob/main/Instructions/InstallRaspberryPiCamera.md)

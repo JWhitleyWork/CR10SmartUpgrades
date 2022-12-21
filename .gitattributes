@@ -6,3 +6,9 @@ Screen/Pictures/20221218_163609.jpg filter=lfs diff=lfs merge=lfs -text
 Screen/Resources/1611933767118-development-guide-of-t5l-asic_20200624.pdf filter=lfs diff=lfs merge=lfs -text
 Screen/Resources/DWIN[[:space:]]C[[:space:]]Compiler[[:space:]]1.1.0.7.zip filter=lfs diff=lfs merge=lfs -text
 Screen/Resources/T5L_DGUSII-Application-Development-Guide20200902-1.pdf filter=lfs diff=lfs merge=lfs -text
+Mainboard/Resources/34-WCH-CH340G.pdf filter=lfs diff=lfs merge=lfs -text
+Mainboard/Resources/ds1117.pdf filter=lfs diff=lfs merge=lfs -text
+Mainboard/Resources/sn74hct245.pdf filter=lfs diff=lfs merge=lfs -text
+Mainboard/Resources/stm32f103rb.pdf filter=lfs diff=lfs merge=lfs -text
+Mainboard/Resources/1640598688.pdf filter=lfs diff=lfs merge=lfs -text
+Mainboard/Resources/1912111437_HUAYI-HY1403D_C358117.pdf filter=lfs diff=lfs merge=lfs -text
