@@ -49,7 +49,13 @@ Instructions for removing and replacing the built-in Wifi Box in the CR-10 Smart
 15. Connect an Ethernet cable between the port on the side of the printer and your local network switch or router.
 16. Connect the power cable, turn on the switch, and hold the power button for 2+ seconds.
 17. Your local network likely uses DHCP and OctoPi defaults to getting a DHCP address. You will need to check your router or DHCP server to find the new IP address on the network.
-18. Connect to the web interface for OctoPrint at http://<rpi_ip>/.
+18. Connect to the web interface for OctoPrint at http://octopi.local/.
+19. Configure OctoPrint as normal. Bed volume is 300x300x400 and the Y axis is inverted.
+20. For security, use SSH to log in to your RPi with the command `ssh pi@octopi.local`, password `raspberry` and change the password with `passwd`.
+21. I recommend installing at least the following plugins, which can be found in the Plugin Repository (Settings > Plugin Manager > Get More):
+    - [Themeify](https://plugins.octoprint.org/plugins/themeify/)
+    - [OctoPrint-Widescreen](https://plugins.octoprint.org/plugins/widescreen/)
+    - [Preheat Button](https://plugins.octoprint.org/plugins/preheat/)
 
 ## Optional Steps
 - [Install Raspberry Pi Camera](https://github.com/JWhitleyWork/CR10SmartUpgrades/blob/main/Instructions/InstallRaspberryPiCamera.md)
